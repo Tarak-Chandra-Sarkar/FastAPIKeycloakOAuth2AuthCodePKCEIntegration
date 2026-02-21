@@ -17,7 +17,7 @@ A modular, production-ready FastAPI project integrated with <strong>Keycloak</st
 ## 📁 Project Structure
 
 ```bash
-app/
+FastAPIKeycloakOAuth2AuthCodePKCEIntegration/
 ├── main.py
 ├── core/
 │   └── config.py
@@ -129,7 +129,12 @@ APP_PORT=8001
 ## ▶️ Run the Application
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn main:app --reload
+```
+or
+
+```bash
+uvicorn main:app --port <port_number> --reload
 ```
 
 Open in browser:
@@ -178,6 +183,7 @@ Response:
 
 ---
 
+
 ## 🔐 Authentication Flow
 
 1. Swagger initiates OAuth2 Authorization Code Flow
@@ -190,6 +196,12 @@ Response:
    * Audience
    * Issuer
    * Expiration
+
+---
+
+### Screenshots
+![alt text](screenshots/image_6.png)![alt text](screenshots/image_7.png)
+![alt text](screenshots/image_1.png) ![alt text](screenshots/image_2.png) ![alt text](screenshots/image_3.png) ![alt text](screenshots/image_4.png) ![alt text](screenshots/image_5.png)
 
 ---
 
